@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const ShowUsers = ({ islogin }) => {
+const ShowUsers = () => {
   const [users, setUsers] = useState({});
   const [error, setError] = useState("");
 
@@ -18,30 +18,33 @@ const ShowUsers = ({ islogin }) => {
   }, []);
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>نام</th>
-          <th>نام خانوادگی</th>
-          <th>ایمیل</th>
-          <th>سن</th>
-          <th>جنسیت</th>
-        </tr>
-      </thead>
-      <tbody>
-        {Object.values(users).map((user) => {
-          return (
-            <tr key={user._id}>
-              <td>{user.firstname}</td>
-              <td>{user.lastname}</td>
-              <td>{user.email}</td>
-              <td>{user.age}</td>
-              <td>{user.gender}</td>
-            </tr>
-          );
-        })}
-      </tbody>
-    </table>
+    <React.Fragment>
+      <table>
+        <thead>
+          <tr>
+            <th>نام</th>
+            <th>نام خانوادگی</th>
+            <th>ایمیل</th>
+            <th>سن</th>
+            <th>جنسیت</th>
+          </tr>
+        </thead>
+        <tbody>
+          {Object.values(users).map((user) => {
+            return (
+              <tr key={user._id}>
+                <td>{user.firstname}</td>
+                <td>{user.lastname}</td>
+                <td>{user.email}</td>
+                <td>{user.age}</td>
+                <td>{user.gender}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      {error ? error : null}
+    </React.Fragment>
   );
 };
 export default ShowUsers;
