@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./assets/img/pasta.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>foodland</title>
+      <style>
+    @font-face {
+      font-family: Nahid;
+      src: url("./assets/Nahid.ttf")format("truetype");
+      font-weight: normal;
+    }
+  </style>
+  </head>
+  <body>
+      <!--==========================
+        Header Section
+        ============================-->
+      <button type="button" id="mobile-nav-toggle" onclick="hambershow()"><i class="fa fa-bars"></i></button>
+      <header id="header" class="header header-hide">
+        <div class="container header-co">
+          <div id="logo" class="pull-left">
+            <h1><a href="#body" class="scrollto"><span>فود</span>لند</a></h1>
+          </div>
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li class="menu-active"><a href="#root">ورود</a></li>
+              <li><a href="#sample">غذا ها</a></li>
+              <li><a href="#features">سرویس ها</a></li>
+              <li><a href="#about-us">درباره ما</a></li>
+              <li><a href="#get-started">فواید همکاری</a></li>
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+      </header><!-- #header -->
+      <nav id="mobile-nav-bar">
+        <ul class="mobile-nav-menu">
+          <li class="menu-active"><a href="#root">ورود</a></li>
+          <li><a href="#sample">غذا ها</a></li>
+          <li><a href="#features">سرویس ها</a></li>
+          <li><a href="#about-us">درباره ما</a></li>
+          <li><a href="#get-started">فواید همکاری</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+      <!--==========================
+        Hero Section
+      ============================-->
+      <section id="hero">
+        <div class="hero-container">
+          <h1>وب سایت سفارش غذا فودلند</h1>
+          <h2>سفارش غذا با بهترین کیفیت</h2>
+          <img src="./assets/img/hero-img.png" alt="erfan mobasheri">
+          <a href="#root" class="btn-get-started scrollto">ثبت سفارش</a>
+        </div>
+      </section><!-- #hero -->
+      <!--==========================
+        Get Started Section
+      ============================-->
+      <section id="get-started" class="padd-section text-center">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>فواید سفارش غذا</h2>
+            <p class="separator">تحویل سریع و آنی</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="item-fe">
+              <div class="feature-block">
+                <img src="./assets/img/svg/cloud.svg" alt="responsive" class="img-fluid">
+                <h4>غذای گرم</h4>
+                <p>یکی از فواید سفارش غذا از فودلند تحویل غذای گرم به شما می باشد که شما می توانید آن را تجربه کنید.</p>
+              </div>
+            </div>
+            <div class="item-fe">
+              <div class="feature-block">
+                <img src="./assets/img/svg/planet.svg" alt="user friendly" class="img-fluid">
+                <h4>تحویل فوری</h4>
+                <p>پیک های فودلند ۲۴ ساعته آمده خدمت رسانی به شما می باشند.</p>
+              </div>
+            </div>
+            <div class="item-fe">
+              <div class="feature-block">
+                <img src="./assets/img/svg/asteroid.svg" alt="uniqe" class="img-fluid">
+                <h4>بهترین مواد غذایی</h4>
+                <p>ما در فودلند سعی می کنیم از بهترین و با کیفیت ترین مواد غذایی موجود برای غذاهای خود استفاده کنیم.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==========================
+        About me Section
+      ============================-->
+      <section id="about-us" class="about-us">
+        <div class="container about-container">
+          <div class="about-content">
+            <h2>سرویس سفارش آنلاین</h2>
+            <p class="about-text">فودلند یک سرویس ۲۴ ساعته برای سفارش غذا می باشد که شما می توانید از هر ساعتی از شبانه روز سفارش غذای خود را به ما بسپارید.ما در فودلند سعی می کنیم با خدمت رسانی عالی شما مشتریان را راضی نگه داریم.
+            </p>
+            <ul>
+              <li><i class="fa fa-check"></i>مواد غذایی عالی</li>
+              <li><i class="fa fa-check"></i>تحویل فوری</li>
+              <li><i class="fa fa-check"></i>قیمت ارزان</li>
+              <li><i class="fa fa-check"></i>تحویل غذا کاملا گرم</li>
+              <li><i class="fa fa-check"></i>بهترین کیفیت</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--==========================
+        Features Section
+      ============================-->
+      <section id="features" class="padd-section text-center wow fadeInUp">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>انواع سرویس ها</h2>
+            <p class="separator">بهترین سرویس دهی</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/veg.png" alt="nodejs" class="img-fluid">
+                <h4>سبزیجات</h4>
+                <p>بهترین و با کیفیت ترین غذاهای سزیجاتی را با ما تجربه کنید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/meat.png" alt="react" class="img-fluid">
+                <h4>گوشت</h4>
+                <p>غذا های گوشتی با بهترین کیفیت و خوش مزه ترین مزه با سفارش از فود لند</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/fruit.png" alt="react native" class="img-fluid">
+                <h4>میوه</h4>
+                <p>تازه ترین و بهترین میوه ها را می توانید فقط با چند کلیک به راحتی از فودلند خریداری کنید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/pasta.jpg" alt="html" class="img-fluid">
+                <h4>پاستا</h4>
+                <p>انواع پاستا با طمع و مزه های متنوع و خوشمزه را می توانید از ما بخرید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/fruit.png" alt="react native" class="img-fluid">
+                <h4>میوه</h4>
+                <p>تازه ترین و بهترین میوه ها را می توانید فقط با چند کلیک به راحتی از فودلند خریداری کنید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/pasta.jpg" alt="html" class="img-fluid">
+                <h4>پاستا</h4>
+                <p>انواع پاستا با طمع و مزه های متنوع و خوشمزه را می توانید از ما بخرید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/veg.png" alt="nodejs" class="img-fluid">
+                <h4>سبزیجات</h4>
+                <p>بهترین و با کیفیت ترین غذاهای سزیجاتی را با ما تجربه کنید</p>
+              </div>
+            </div>
+            <div>
+              <div class="feature-block">
+                <img src="./assets/img/meat.png" alt="react" class="img-fluid">
+                <h4>گوشت</h4>
+                <p>غذا های گوشتی با بهترین کیفیت و خوش مزه ترین مزه با سفارش از فود لند</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==========================
+        sample Section
+      ============================-->
+      <section id="sample" class="padd-section text-center">
+        <div class="container">
+          <div class="section-title text-center">
+            <h2>نمونه غذا ها</h2>
+            <p class="separator">بهترین غذا ها در وب سایت فودلند</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="examle-item item-ex">
+              <div class="example-block bottom">
+                <img src="./assets/img/example1.jpg" alt="img">
+                <div class="example-content">
+                  <span>نام غذا</span>
+                  <h4>نمونه توضیح غذا</h4>
+                </div>
+              </div>
+            </div>
+            <div class="examle-item item-ex">
+              <div class="example-block bottom">
+                <img src="./assets/img/example2.jpg" alt="img">
+                <div class="example-content">
+                  <span>نام غذا</span>
+                  <h4>نمونه توضیح غذا</h4>
+                </div>
+              </div>
+            </div>
+            <div class="examle-item item-ex">
+              <div class="example-block bottom">
+                <img src="./assets/img/example3.jpg" alt="img">
+                <div class="example-content">
+                  <span>نام غذا</span>
+                  <h4>نمونه توضیح غذا</h4>
+                </div>
+              </div>
+            </div>
+            <div class="examle-item item-ex">
+              <div class="example-block bottom">
+                <img src="./assets/img/example4.jpg" alt="img">
+                <div class="example-content">
+                  <span>نام غذا</span>
+                  <h4>نمونه توضیح غذا</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==========================
+        Contact Section
+      ============================-->
+        <div id="root"></div>
+      <!--==========================
+        Footer
+      ============================-->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-me">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="#">فولند</a>
+                <p>فودلند یک سرویس ۲۴ ساعته برای سفارش غذا می باشد که شما می توانید از هر ساعتی از شبانه روز سفارش غذای خود را به ما بسپارید.ما در فودلند سعی می کنیم با خدمت رسانی عالی شما مشتریان را راضی نگه داریم.
+
+              </div>
+            </div>
+            <div class="footer-list">
+              <div class="list-menu">
+                <h4>دسترسی سریع</h4>
+                <ul class="list-unstyled">
+                  <li class="menu-active"><a href="#root">ورود</a></li>
+              <li><a href="#sample">غذا ها</a></li>
+              <li><a href="#features">سرویس ها</a></li>
+              <li><a href="#about-us">درباره ما</a></li>
+              <li><a href="#get-started">فواید همکاری</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-list">
+              <div class="list-menu">
+                <h4>سرویس ها</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#features">سبزیجات</a></li>
+                  <li><a href="#features">غذاهای گوشتی</a></li>
+                  <li><a href="#features">میوه</a></li>
+                  <li><a href="#features">پاستا</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights">
+          <div class="container">
+            <div class="credits">
+              طراحی توسط <a href="#">ابوالفضل</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        const hambershow = () => {
+          const mobileNav = document.getElementById('mobile-nav-bar')
+          mobileNav.style.display == 'none' ? mobileNav.style.display = 'block' : mobileNav.style.display = 'none'
+        }
+      </script>
+  </body>
+</html>
