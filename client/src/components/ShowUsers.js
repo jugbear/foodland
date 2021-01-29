@@ -4,6 +4,7 @@ import axios from "axios";
 const ShowUsers = () => {
   const [users, setUsers] = useState({});
   const [error, setError] = useState("");
+  const [term, setTerm] = useState("");
 
   const fetchUsers = async () => {
     try {
@@ -16,9 +17,23 @@ const ShowUsers = () => {
   useEffect(() => {
     fetchUsers();
   }, []);
-
+  const resultHelper = (title) => {
+    return Object.values(users).filter((st) => {
+      return st.email.includes(title);
+    });
+  };
   return (
     <React.Fragment>
+      <form>
+        <input
+          type="text"
+          className="form-control"
+          placeholder="جست و جو کنید"
+          value={term}
+          onChange={e=>setTerm(e.target.value)}
+          onEndEditing={() => resultHelper(term)}
+        />
+      </form>
       <table>
         <thead>
           <tr>
@@ -30,7 +45,7 @@ const ShowUsers = () => {
           </tr>
         </thead>
         <tbody>
-          {Object.values(users).map((user) => {
+          {resultHelper(term).map((user) => {
             return (
               <tr key={user._id}>
                 <td>{user.firstname}</td>

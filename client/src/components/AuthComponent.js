@@ -19,7 +19,7 @@ const AuthComponent = () => {
       <div className="users-table-holder">
         <h2 className="user-header">لیست کاربران</h2>
 
-        {isLogin ? <ShowUsers islogin={handleChange} /> : <NotFound />}
+        {!isLogin ? <ShowUsers islogin={handleChange} /> : <NotFound />}
         {isLogin ? <button className="submit-btn" onClick={handleChange}>خروج</button> :null}
       </div>
     </div>
